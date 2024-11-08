@@ -53,7 +53,7 @@ loginForm?.addEventListener("submit", async (e) => {
     try{
         await signInWithEmailAndPassword(auth, email, password);
         displayUsername();
-        window.location.href = "index.html";
+        window.location.href = "journal.html";   //
     } catch (error) {
         console.error("login error:", error);
         alert(error.message);
