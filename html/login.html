@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unihack- Login/Register</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="auth.js" defer></script>
+</head>
+<body>
+   <div class="auth-container">
+    <h2>Welcome to Unihack</h2>
+    <form id="loginForm" style="display: block;">
+        <h3>Login</h3>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+        <p>Don't have an account?<button type="button" id="showRegisterForm">Register</button></p>
+        </form>
+    <form id="registrationForm" style="display: none;">
+        <h3>Register</h3>
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <button type="submit">Register</button>
+        <p>Already have an account?<button type="button" id="showLoginForm">Login</button></p>
+        </form>
+        </div>
+</body>
+</html>

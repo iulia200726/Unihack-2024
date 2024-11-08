@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water& Sleep Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" href="firebaseInit.js"></script>
+    <script type="module" href="chart.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <nav>
+        <h1>Health Tracker</h1>
+        <ul>
+            <li><a href="index.html">Journal</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="badges.html">Badges</a></li>
+            <li><a href="water-sleep.html"></a></li>
+            <li id="usernameDisplay" style="cursor:pointer; display:none;"></li>
+            <div class="dropdown-content" id="dropdownContent"></div>
+            <button id="logoutButton">Logout</button>
+            <button id="deleteAccountButton">Delete Account</button>
+        </div>
+        </ul>
+    </nav>
+    <div>
+        <h2>Track Your Daily Water Intake</h2>
+        <form id="waterForm"></form>
+        <input type="number" id="waterInput" placeholder="Glasses of water" required>
+        <button type="submit">Save</button>
+    </form>
+    <div id="waterChartContainer" class="chart"></div>
+    <h2>Track Your Daily Sleep Hours</h2>
+    <form id="sleepForm">
+        <input type="number" id="sleepInput"placeholder="Hours of sleep" required>
+        <button type="submit">Save</button>
+        </form>
+        <div id="sleepChartContainer" class="chart"></div>
+    </div>
+    <div class="chart-section">
+        <h3>Water Intake (Glasses)</h3>
+        <canvas id="waterChart" width="400" height="200"></canvas>
+        </div>
+        <div class="chart-section">
+            <h3>Sleep Duration (Hours)</h3>
+            <canvas id="sleepChart" width="400" height="200"></canvas>
+            </div>
+    <script type="module" src="logout.js"></script>
+    <script type="module" src="navbar.js"></script>        
+</body>
+</html>
