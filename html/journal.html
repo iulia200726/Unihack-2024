@@ -17,12 +17,10 @@
             <li><a href="../html/resources.html">Resources</a></li>
             <li><a href="../html/badges.html">Badges</a></li>
             <li><a href="../html/water-sleep.html">Water and Sleep</a></li>
-            <li id="usernameDisplay" style="cursor:pointer;position:relative;">
-                <img src="user.png" alt="User" width="30" id="userImage">
-                <div class="dropdown-content" id="dropdownContent" style="display: none;"></div>
-                <button id="logoutButton">Logout</button>
-                <button id="deleteAccountButton">Delete Account</button>
-            </div>
+            <li id="usernameDisplay" style="cursor:pointer; display:none;"></li>
+            <div class="dropdown-content" id="dropdownContent"></div>
+            <button id="logoutButton">Logout</button>
+            <button id="deleteAccountButton">Delete Account</button>
             </li>
         </ul>
     </nav>
@@ -35,7 +33,7 @@
         <ul id="entryList"></ul>
     </main>
     <script type="module" src="../js/logout.js"></script>
-    <!-- <script type="module" src="../js/"></script> -->
+    <script type="module" src="../js/auth.js"></script>
     <script type="module" src="../js/navbar.js"></script>
     
     <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
