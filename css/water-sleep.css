@@ -2,27 +2,42 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    /* box-sizing: border-box;
+    font-family: Arial, sans-serif;*/
 }
 
+/* Body - păstrează configurațiile generale */
 body {
     background-color: #f5f5f5;
     color: #333;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 20px;
+    /* align-items: center; */
+    padding: 0; /* Elimină paddingul din body */
+    margin: 0; /* Elimină marginile */
 }
 
-/* Containere pentru titluri și formulare */
-div {
-    max-width: 600px;
+
+/* Container pentru secțiunile de Water Intake și Sleep Hours */
+.container {
+    max-width: 1200px;
     width: 100%;
-    text-align: center;
+    display: flex;
+    justify-content: space-between; /* Aliniere pe orizontală */
+    gap: 20px; /* Distanță între secțiuni */
+    margin-top: 20px;
+   margin: auto;
 }
 
-/* Titluri */
+/* Fiecare secțiune (Water Intake și Sleep Hours) va ocupa jumătate din lățimea containerului */
+.section {
+    width: 48%;  /* Fiecare secțiune va ocupa aproape jumătate din lățimea containerului */
+    display: flex;
+    flex-direction: column; /* Pune formularul și graficul unul sub altul */
+    align-items: center;
+}
+
+/* Titluri pentru secțiuni */
 h2 {
     color: #333;
     margin: 20px 0;
@@ -44,14 +59,14 @@ form input[type="number"] {
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    width: 150px;
+    width: 250px;
     margin-right: 10px;
     font-size: 1em;
 }
 
 form button {
     padding: 10px 20px;
-    background-color: #28a745;
+    background-color: #4D869C;
     color: white;
     border: none;
     border-radius: 5px;
@@ -61,7 +76,7 @@ form button {
 }
 
 form button:hover {
-    background-color: #218838;
+    background-color: #4D869C;
 }
 
 /* Container pentru grafice */
@@ -70,12 +85,13 @@ form button:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     border-radius: 10px;
-    margin-top: 20px;
     width: 100%;
     max-width: 500px;
     text-align: center;
+    margin-top: 20px;
 }
 
 .chart {
     margin-top: 10px;
 }
+
