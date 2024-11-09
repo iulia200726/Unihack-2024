@@ -26,28 +26,17 @@ a:hover {
 /* Hero Section */
 /* Hero Section */
 .hero {
-    background-image: url('../html/WhatsApp\ Image\ 2024-11-09\ at\ 13.06.35_eb56ef21.jpg'); /* Calea către imagine */
+   background-image:url(../html/WhatsApp\ Image\ 2024-11-09\ at\ 15.32.17_e38eb573.jpg) ;/* Calea către imagine */
     background-size: cover; /* Acoperă întreaga secțiune cu imaginea */
     background-position: center; /* Poziționează imaginea în centru */
     background-repeat: no-repeat; /* Nu repetă imaginea */
     color: white;
     text-align: center;
-    padding: 90px 0; /* Reducem padding-ul pentru a micșora secțiunea */
-    height: 300px; /* Reducem înălțimea secțiunii */
+    padding: 50px 0; /* Reducem padding-ul pentru a micșora secțiunea */
+    height: 100px; /* Reducem înălțimea secțiunii */
     width: 100%; /* Face secțiunea să ocupe întreaga lățime */
     margin: 0; /* Elimină marginile externe pentru a folosi întreaga lățime */
 }
-
-
-.hero-content{
-    font-size: 30px;
-    margin:0;
-    color:#E8EAF6;
-    padding:20px;
-}
-
-
-
 /* Welcome Message */
 .welcome-message {
     padding: 20px;
