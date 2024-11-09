@@ -1,11 +1,183 @@
-h2{
-    background-color: #4d869c;
-    padding: 0.5em;
-    text-align: center;
-    margin-top: 2em;
-    margin-bottom: 2em;
-
+/* Stiluri generale */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
 }
-h3{
-    color: #4d869c;
+
+h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #007bff;
+    margin-top: 20px;
+}
+
+p {
+    text-align: center;
+    font-size: 1.2em;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+/* Secțiunea Badge-urilor */
+#badgeSection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.badge-card {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.badge-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.badge-card img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+}
+
+.badge-card h4 {
+    font-size: 1.4em;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.badge-card p {
+    font-size: 1em;
+    color: #555;
+}
+
+/* Mesaj motivațional */
+.motivation {
+    font-size: 1.2em;
+    text-align: center;
+    color: #007bff;
+    margin-top: 40px;
+    padding: 10px;
+    background-color: #f0f8ff;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+/* Stiluri pentru butoane */
+button {
+    padding: 12px 25px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Stiluri pentru bara de navigare */
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav h1 {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f39c12;
+}
+/* Stilizare pentru containerul de carduri */
+.badge-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    list-style-type: none;
+    gap: 20px;
+}
+
+/* Stilizare pentru fiecare card */
+.badge-card {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 220px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.badge-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Stilizare pentru imagine */
+.badge-card .badge-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+/* Stilizare pentru titlu */
+.badge-card h4 {
+    font-size: 1.2em;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+/* Stilizare pentru descriere */
+.badge-card p {
+    font-size: 0.9em;
+    color: #555;
 }

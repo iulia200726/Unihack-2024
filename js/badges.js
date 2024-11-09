@@ -5,6 +5,12 @@ const WATER_GOAL = 6;
 const SLEEP_GOAL = 8;
 const badgeList = document.getElementById("badgeList");
 
+// Mapping of badge names to their specific images
+const badgeImages = {
+    "Hydration Hero: Consumed 6+ glasses of water in a day.": "../html/Leonardo_Phoenix_a_stylized_modern_and_minimalist_illustration_1-removebg-preview-removebg-preview.png",
+    "Sleep Champion: Slept 8+ hours in a day.": "../html/Leonardo_Phoenix_A_circular_badge_featuring_a_serene_glowing_f_3-removebg-preview.png"
+};
+
 auth.onAuthStateChanged(user => {
     if (user) {
         console.log("User is authenticated, starting badge checks...");
@@ -15,7 +21,7 @@ auth.onAuthStateChanged(user => {
     }
 });
 
-// Function to display badges
+// Function to display badges as cards
 async function displayBadges(userId) {
     const userRef = doc(db, "users", userId);
     const docSnapshot = await getDoc(userRef);
@@ -24,9 +30,20 @@ async function displayBadges(userId) {
         const badges = docSnapshot.data().badges || [];
         badgeList.innerHTML = ""; // Clear existing badges in case of re-render
         badges.forEach(badge => {
-            const listItem = document.createElement("li");
-            listItem.textContent = badge;
-            badgeList.appendChild(listItem);
+            const badgeCard = document.createElement("li");
+            badgeCard.classList.add("badge-card");
+
+            // Check if the badge has a specific image and use it
+            const badgeImage = badgeImages[badge] || "path/to/default-badge.jpg";
+
+            // Structură de card pentru fiecare badge
+            badgeCard.innerHTML = `
+                <img src="${badgeImage}" alt="${badge}" class="badge-image">
+                <h4>${badge}</h4>
+                <p>Description of ${badge}</p>
+            `;
+
+            badgeList.appendChild(badgeCard);
         });
         console.log("Displayed badges:", badges);
     } else {
