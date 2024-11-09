@@ -58,9 +58,10 @@ button{
     background-color: #4D869C;
     color:white;
     border-radius: 1em;
-    padding: 0.6em;
+    padding: 0.5em;
     border: none;
 }
+<<<<<<< Updated upstream
 
 
 
@@ -242,3 +243,18 @@ canvas {
 .dropdown-content button:hover {
     background-color: #f1f1f1; /* Hover effect */
 }
+=======
+button{
+    width: 8em;
+    display: block;
+    margin: auto;
+    
+    
+}
+.element1{
+    /* justify-content: space-around; */
+    margin: 1em;
+    padding: 0.5em;
+    background-color: #4d869c;
+}
+>>>>>>> Stashed changes

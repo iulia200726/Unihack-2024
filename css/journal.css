@@ -1,7 +1,20 @@
 textarea{
-    width: 35em;
-    height: 35em;
+    width: 50em;
+    height: 25em;
+
 }
 body{
     background-color: #eef7ff;
+}
+main{
+    place-content: center;
+    place-self: center;
+    text-align: center;
+    padding: 3em;
+}
+h1{
+    margin-bottom: 1em;
+}
+button{
+    margin-top: 1em;
 }
