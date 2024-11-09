@@ -83,7 +83,7 @@ function renderCharts() {
             datasets: [{
                 label: "Water Intake (Glasses)",
                 data: displayWaterData,
-                backgroundColor: "#4caf50",
+                backgroundColor: "#89CFF0",
             }]
         },
         options: { responsive: true, scales: { y: { beginAtZero: true, min: 0, max: 10 } } }
@@ -96,7 +96,7 @@ function renderCharts() {
             datasets: [{
                 label: "Sleep Duration (Hours)",
                 data: displaySleepData,
-                backgroundColor: "#2196f3",
+                backgroundColor: "#0F52BA",
             }]
         },
         options: { responsive: true, scales: { y: { beginAtZero: true, min: 0, max: 10 } } }

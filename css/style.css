@@ -61,3 +61,184 @@ button{
     padding: 0.6em;
     border: none;
 }
+
+
+
+
+/* button {
+    padding: 10px;
+    background: #6200ea;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #5e00d1;
+} */
+
+#chatOutput {
+    border: 1px solid #ccc;
+    padding: 10px;
+    height: 200px;
+    overflow-y: scroll;
+    margin-bottom: 10px;
+}
+
+.chart {
+    display: flex;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.bar {
+    width: 30px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+}
+
+/* Style for the chart container */
+.chart-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+/* Style for each bar in the chart */
+.bar {
+    width: 30px;
+    background-color: #4caf50;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+/* Hover effect for bars */
+.bar:hover {
+    background-color: #45a049;
+}
+
+/* Style for loading and empty data messages */
+.chart-container p {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.chart-section {
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.chart-section canvas {
+    width: 100%;
+    height: 400px;
+}
+
+/* canvas#waterChart{
+    background-color: #45a049;
+} */
+
+canvas {
+    display: block;
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+/* #usernameDropdown {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+}
+
+#dropdownMenu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    list-style: none;
+    display: none;
+    min-width: 100px;
+    z-index: 1;
+}
+
+#dropdownMenu li {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#dropdownMenu li:hover {
+    background-color: #eee;
+} */
+
+
+
+
+/* .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content button {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border: none;
+    width: 100%;
+    text-align: left;
+}
+.dropdown-content button:hover {
+    background-color: #ddd;
+} */
+
+
+
+
+.dropdown-content {
+    position: absolute; /* Position relative to the nearest positioned ancestor */
+    background-color: white; /* Background color */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Shadow effect */
+    z-index: 1; /* Ensure it appears above other elements */
+    padding: 10px; /* Padding for the dropdown */
+    top: 100%; /* Position below the user image */
+    left: -100px; /* Align to the left */
+    min-width: 100px; /* Minimum width for the dropdown */
+    color: black;
+}
+
+.dropdown-content button {
+    display: block; /* Stack buttons vertically */
+    width: 100%; /* Make buttons full width */
+    background: none; /* Remove background */
+    border: none; /* Remove border */
+    text-align: left; /* Align text to the left */
+    padding: 10px; /* Padding for buttons */
+    cursor: pointer; /* Pointer cursor */
+    color: black;
+}
+
+.dropdown-content button:hover {
+    background-color: #f1f1f1; /* Hover effect */
+}

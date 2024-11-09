@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Water& Sleep Tracker</title>
+    <title>Water & Sleep Tracker</title>
     <link rel="stylesheet" href="../css/style.css">
-    <script type="module" href="../js/firebaseInit.js"></script>
-    <script type="module" href="../js/chart.js" defer></script>
+    <script type="module" src="../js/firebaseInit.js"></script>
+    <script type="module" src="../js/chart.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
@@ -25,28 +25,29 @@
     </nav>
     <div>
         <h2>Track Your Daily Water Intake</h2>
-        <form id="waterForm"></form>
-        <input type="number" id="waterInput" placeholder="Glasses of water" required>
-        <button type="submit">Save</button>
-    </form>
-    <div id="waterChartContainer" class="chart"></div>
-    <h2>Track Your Daily Sleep Hours</h2>
-    <form id="sleepForm">
-        <input type="number" id="sleepInput"placeholder="Hours of sleep" required>
-        <button type="submit">Save</button>
+        <form id="waterForm">
+            <input type="number" id="waterInput" placeholder="Glasses of water" required>
+            <button type="submit">Save</button>
+        </form>
+        <div id="waterChartContainer" class="chart"></div>
+        
+        <h2>Track Your Daily Sleep Hours</h2>
+        <form id="sleepForm">
+            <input type="number" id="sleepInput" placeholder="Hours of sleep" required>
+            <button type="submit">Save</button>
         </form>
         <div id="sleepChartContainer" class="chart"></div>
     </div>
     <div class="chart-section">
         <h3>Water Intake (Glasses)</h3>
         <canvas id="waterChart" width="400" height="200"></canvas>
-        </div>
-        <div class="chart-section">
-            <h3>Sleep Duration (Hours)</h3>
-            <canvas id="sleepChart" width="400" height="200"></canvas>
-            </div>
+    </div>
+    <div class="chart-section">
+        <h3>Sleep Duration (Hours)</h3>
+        <canvas id="sleepChart" width="400" height="200"></canvas>
+    </div>
     <script type="module" src="../js/logout.js"></script>
-    <script type="module" src="../js/navbar.js"></script>   
+    <script type="module" src="../js/navbar.js"></script>
     <script type="module" src="../js/auth.js"></script>    
 </body>
 </html>
