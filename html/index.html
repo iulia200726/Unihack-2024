@@ -1,80 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Mental Health Counseling</title>
-        <link rel="stylesheet" href="../css/index.css">
-        <link rel="stylesheet" href="../css/style.css">
-        <!-- Font Awesome -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    </head>
-    
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Good Mental Health Co</title>
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <script type="module" src="../js/firebaseInit.js"></script>
+</head>
 <body>
-    <nav>
-        <h1>Unihack</h1>
-        <ul>
-            <li><a href="../html/journal.html">Journal</a></li>
-            <li><a href="../html/resources.html">Resources</a></li>
-            <li><a href="../html/badges.html">Badges</a></li>
-            <li><a href="../html/water-sleep.html">Water and Sleep</a></li>
-            <li id="usernameDisplay" style="cursor:pointer; display:none;"></li>
-            <div class="dropdown-content" id="dropdownContent"></div>
-            <button id="logoutButton">Logout</button>
-            <button id="deleteAccountButton">Delete Account</button>
-            </li>
-        </ul>
-    </nav>
-    <div class="hero">
-        </div>
+  <header class="banner">
+    <p>Suicide Hotline Telephone: 0800 801 200</p>
+  </header>
+
+  <nav>
+    <h1>MindAid</h1>
+    <ul>
+        <li><a href="../html/index.html">Homepage</a></li>
+        <li><a href="../html/journal.html">Journal</a></li>
+        <li><a href="../html/resources.html">Resources</a></li>
+        <li><a href="../html/badges.html">Badges</a></li>
+        <li><a href="../html/water-sleep.html">Water and Sleep</a></li>
+        <li id="usernameDisplay" style="cursor:pointer; display:none;"></li>
+        <div class="dropdown-content" id="dropdownContent"></div>
+        <button id="logoutButton">Logout</button>
+        <button id="deleteAccountButton">Delete Account</button>
+        </li>
+    </ul>
+</nav>
+
+  <main class="content">
+    <div class="text-content">
+      <h2>Affordable, high-quality therapy delivered with heart & soul</h2>
+      <p>Counselling and psychotherapy sessions available online throughout the UK, and face-to-face in Elephant and Castle, London for £35 per session</p>
+      <a href="#" class="btn primary-btn">Book an assessment</a>
     </div>
-    
-    <div class="welcome-message">
-        <p>Welcome to our mental health counseling platform, where your well-being is our top priority. We are here to support you on your journey to a healthier and happier life.</p>
+    <div class="image-content">
+      <img src="Head_chakra_shadows.png" alt="Silhouette of a head with trees" /> <!-- Replace with actual image path -->
     </div>
-    <div class="container">
-        <div class="content">
-            <h1>Discuss Your Problems with Us</h1>
-            <p>We provide a safe and welcoming environment for you to share your concerns and receive guidance. Our professional team is here to support your mental well-being and help you find effective solutions.</p>
-            <div class="tips">
-                <h2>Tips for Maintaining Good Mental Health</h2>
-                <ul>
-                    <li>Practice mindfulness and meditation to manage stress effectively.</li>
-                    <li>Ensure you have a balanced diet and regular physical activity.</li>
-                    <li>Maintain strong connections with friends and family to build a support network.</li>
-                    <li>Set realistic goals and prioritize self-care routines.</li>
-                    <li>Seek professional help when needed without hesitation.</li>
-                </ul>
-            </div>
-        </div>
-        <div class="urgent-info">
-            <h2>Emergency Guidance</h2>
-            <p>If you are facing a mental health crisis or need immediate assistance, please use the following resources:</p>
-            <p><strong>Emergency Helpline:</strong> <a href="tel:+11234567890">+1 123-456-7890</a></p>
-            <p><strong>Local Mental Health Services:</strong> <a href="https://example.com/emergency">Find nearby support</a></p>
-            <p><strong>24/7 Crisis Support:</strong> Contact <a href="https://example.org">Crisis Hotline</a> for round-the-clock help.</p>
-            <p>Remember, you are not alone. Help is available.</p>
-        </div>
-        <div class="motivation">
-            <h2>Motivational Message</h2>
-            <p>“You don’t have to control your thoughts. You just have to stop letting them control you.” – Dan Millman</p>
-            <p>Believe in yourself and remember that every step forward, no matter how small, is progress.</p>
-        </div>
-    </div>
-    
-    <!-- Footer Section -->
-    <footer>
-        <div class="social-icons">
-          <a href="https://www.facebook.com" target="_blank" class="social-icon"><img src="facebook.png" alt="Facebook"></a>
-          <a href="https://www.twitter.com" target="_blank" class="social-icon"><img src="twitter.png" alt="Twitter"></a>
-          <a href="https://www.instagram.com" target="_blank" class="social-icon"><img src="social.png" alt="Instagram"></a>
-          <!-- adaugă mai multe iconițe după necesitate -->
-        </div>
-      </footer>
-      
-    
-    
-    
+  </main>
+
+  <footer class="features">
+    <p>✓ Weekly sessions &nbsp; &nbsp; ✓ High-quality therapy &nbsp; &nbsp; ✓ Online or in-person &nbsp; &nbsp; ✓ Open-ended sessions</p>
+  </footer>
+
+  <script type="module" src="../js/logout.js"></script>
+  <script type="module" src="../js/navbar.js"></script>
+  <script type="module" src="../js/auth.js"></script> 
+  
+  <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
+  <script src="https://files.bpcontent.cloud/2024/11/09/12/20241109123230-3K93O8XN.js"></script>
 </body>
 </html>

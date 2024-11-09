@@ -3,18 +3,18 @@ textarea{
     height: 25em;
 
 }
-body{
+/* body{
     background-color: #eef7ff;
-}
+} */
 main{
     place-content: center;
     place-self: center;
     text-align: center;
     padding: 3em;
 }
-h1{
+/* .h1{
     margin-bottom: 1em;
-}
-button{
+} */
+/* button{
     margin-top: 1em;
-}
+} */

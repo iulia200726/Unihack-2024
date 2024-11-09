@@ -1,18 +1,20 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     font-family: Arial, sans-serif;
+    background-color: #F5F1EB;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    background: #7AB2B2;
+    padding: 20px 20px;
+    background: #264653;
     color: white;
 }
 
@@ -25,6 +27,10 @@ nav ul {
 }
 
 nav ul li {
+    margin-left: 20px;
+}
+
+nav button{
     margin-left: 20px;
 }
 
@@ -58,10 +64,11 @@ button{
     background-color: #4D869C;
     color:white;
     border-radius: 1em;
-    padding: 0.5em;
+    padding: 0.63em;
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
     border: none;
 }
-<<<<<<< Updated upstream
 
 
 
@@ -243,7 +250,6 @@ canvas {
 .dropdown-content button:hover {
     background-color: #f1f1f1; /* Hover effect */
 }
-=======
 button{
     width: 8em;
     display: block;
@@ -251,10 +257,17 @@ button{
     
     
 }
-.element1{
+/* .element1{
     /* justify-content: space-around; */
-    margin: 1em;
+    /* margin: 1em; 
     padding: 0.5em;
     background-color: #4d869c;
-}
->>>>>>> Stashed changes
+} */
+
+.banner {
+    background-color: #FDD6C1;
+    color: #333;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9rem;
+  }
