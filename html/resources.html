@@ -4,9 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resource Library</title>
-    <link rel="stylesheet" href="../css/style.css">
     <script type="module" src="../js/firebaseInit.js"></script>
     <script type="module" src="../js/auth.js"></script>
+    <link rel="stylesheet" href="../css/testresources.css">
+    <style>
+        /* Basic page layout */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+        }
+
+        /* Search bar styling */
+        #searchBar {
+            width: 100%;
+            padding: 15px 20px;
+            margin: 20px 0;
+            font-size: 16px;
+            border-radius: 30px;
+            border: 1px solid #ddd;
+            background-color: #fff;
+            transition: all 0.3s ease;
+            box-sizing: border-box;
+            background-image: url('https://img.icons8.com/ios-filled/50/000000/search.png');
+            background-repeat: no-repeat;
+            background-position: 10px center;
+            background-size: 20px 20px; /* Smaller icon size */
+            padding-left: 40px; /* To make space for the icon */
+        }
+
+        #searchBar:focus {
+            outline: none;
+            border-color: #3498db;
+            box-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
+        }
+
+        /* Hide categories when no search matches */
+        .category {
+            margin-bottom: 20px;
+        }
+
+        /* Additional styles for category sections */
+        .category h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
     <nav>
@@ -17,19 +61,94 @@
             <li><a href="../html/badges.html">Badges</a></li>
             <li><a href="../html/water-sleep.html">Water and Sleep</a></li>
             <li id="usernameDisplay" style="cursor:pointer; display:none;"></li>
-            <!-- <div class="dropdown-content" id="dropdownContent"></div> -->
             <button id="logoutButton">Logout</button>
             <button id="deleteAccountButton">Delete Account</button>
         </ul>
     </nav>
+
     <div>
         <h2>Resource Library</h2>
-        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/01bkWcFMXRCqISUzHPR4TB/video?utm_source=generator&t=0" width="624" height="351" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-       <ul id="resourceList"></ul>
+
+        <!-- Search bar with smaller icon inside placeholder -->
+        <input type="text" id="searchBar" placeholder="Search for a podcast..." oninput="searchPodcasts()">
+
+        <!-- Mental Health Category -->
+        <div class="category category-mental-health">
+            <h3>Mental Health Podcasts</h3>
+            <iframe src="https://open.spotify.com/embed/episode/01bkWcFMXRCqISUzHPR4TB/video?utm_source=generator&t=0" width="624" height="250" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <iframe src="https://open.spotify.com/embed/episode/4DlGagjOqAtkqDVat3NsvG/video?utm_source=generator" width="624" height="250" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+
+        <!-- Stress Management Category -->
+        <div class="category category-stress-management">
+            <h3>Stress Management Podcasts</h3>
+            <iframe src="https://open.spotify.com/embed/episode/5nUG0tIXGHHpDDZfBmS5GE?utm_source=generator" width="624" height="250" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <iframe src="https://open.spotify.com/embed/episode/03rMVoXiRooF37nsaZRvy4/video?utm_source=generator" width="624" height="250" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+
+        <!-- Productivity Category -->
+        <div class="category category-productivity">
+            <h3>Productivity Podcasts</h3>
+            <iframe src="https://open.spotify.com/embed/episode/5MHGMXMjdk3vk81GZ8z28M?utm_source=generator" width="624" height="250" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <iframe src="https://open.spotify.com/embed/episode/2OH8YSZiktuGdLdomP19xE/video?utm_source=generator" width="624" height="250" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+
+        <!-- Wellness Category -->
+        <div class="category category-wellness">
+            <h3>Wellness Podcasts</h3>
+            <iframe src="https://open.spotify.com/embed/episode/1vlsEwI0Nrx1hoiNDvA479/video?utm_source=generator" width="624" height="250" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <iframe src="https://open.spotify.com/embed/episode/2v4i6mxOinbTL4RTrQ4rr5?utm_source=generator" width="624" height="250" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+
+        <!-- Education Category -->
+        <div class="category category-education">
+            <h3>Education Podcasts</h3>
+            <iframe src="https://open.spotify.com/embed/episode/6SLTqlQnidxd46NZwz5AP9/video?utm_source=generator" width="624" height="250" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <iframe src="https://open.spotify.com/embed/episode/0OG74UvrxYITDtcIkSYsg7?utm_source=generator" width="624" height="250" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+
+        <!-- Leadership Category -->
+        <div class="category category-leadership">
+            <h3>Leadership Podcasts</h3>
+            <iframe src="https://open.spotify.com/embed/episode/6KQvWOJZkUlxObjJvNOeAc?utm_source=generator" width="624" height="250" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <iframe src="https://open.spotify.com/embed/episode/6S6iCvmJotyCp3K21oOkuR/video?utm_source=generator" width="624" height="250" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
     </div>
+
     <script type="module" src="../js/logout.js"></script>
     <script type="module" src="../js/navbar.js"></script>
     <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
     <script src="https://files.bpcontent.cloud/2024/10/25/18/20241025185026-RIAR5LLL.js"></script>
+
+    <!-- Search function -->
+    <script>
+        function searchPodcasts() {
+            var input, filter, categories, category, i, frames, frame, title, textValue;
+            input = document.getElementById('searchBar');
+            filter = input.value.toUpperCase();
+            categories = document.getElementsByClassName('category');
+            
+            for (i = 0; i < categories.length; i++) {
+                category = categories[i];
+                title = category.getElementsByTagName('h3')[0];
+                frames = category.getElementsByTagName('iframe');
+                
+                // Check if the category name contains the search term
+                textValue = title.textContent || title.innerText;
+                if (textValue.toUpperCase().indexOf(filter) > -1) {
+                    category.style.display = "";
+                } else {
+                    category.style.display = "none";
+                }
+                
+                // Check each iframe within the category to match the search term (if needed)
+                for (var j = 0; j < frames.length; j++) {
+                    if (filter.length === 0 || frames[j].src.toUpperCase().indexOf(filter) > -1) {
+                        category.style.display = "";
+                    }
+                }
+            }
+        }
+    </script>
 </body>
 </html>
