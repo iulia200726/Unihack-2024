@@ -70,7 +70,7 @@ button {
 #entryList li:last-child {
     margin-bottom: 0;
 }
-.footer-section .social a {
+/* .footer-section .social a {
     margin: 0 10px;
     display: inline-block;
   }
@@ -80,7 +80,90 @@ button {
     font-size: 14px;
   }
   .social {
-    background-color: #f4f4f9;
+    background-color: #264653;
     padding: 55px 20px;
     text-align: center;
-  }
+  } */
+
+
+
+
+
+  /* Footer Styles */
+/* .footer {
+    background-color: #333;
+    color: #f1f1f1;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-section h2, .footer-section h3 {
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+.footer-section p, .footer-section ul {
+    margin: 0;
+    padding: 0;
+    font-size: 0.9rem;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    color: #f1f1f1;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    color: #ffcc00;
+}
+
+.footer-section.social a {
+    margin: 0 10px;
+    display: inline-block;
+    color: #f1f1f1;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 0.8rem;
+    color: #cccccc;
+} */
+
+
+/* Footer Styles */
+
+@media (min-width: 769px) {
+    .menu-toggle {
+        display: none;
+    }
+}
+
+/* Style for the "No badges" message */
+.no-badge-message {
+    text-align: center;
+    color: #555;
+    font-style: italic;
+}

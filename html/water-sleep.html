@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Water & Sleep Tracker</title>
+    <title>MindAid-Water&Sleep</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/water-sleep.css">
     <script type="module" src="../js/firebaseInit.js"></script>
@@ -11,10 +11,13 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
+    <header class="banner">
+        <p>Suicide Hotline Telephone: 0800 801 200</p>
+      </header>
     <nav>
-        <h1>UniHack</h1>
+        <h1>MindAid</h1>
         <ul>
-            <li><a href="../html/index.html">Homepage</a></li>
+            <li><a href="../html/index.html">Home</a></li>
             <li><a href="../html/journal.html">Journal</a></li>
             <li><a href="../html/resources.html">Resources</a></li>
             <li><a href="../html/badges.html">Badges</a></li>
@@ -33,7 +36,7 @@
                 <button type="submit">Save</button>
             </form>
             <div id="waterChartContainer" class="chart-section">
-                <canvas id="waterChart" width="400" height="200"></canvas>
+                <canvas id="waterChart" width="600" height="400"></canvas>
             </div>
         </div>
 
@@ -45,7 +48,7 @@
                 <button type="submit">Save</button>
             </form>
             <div id="sleepChartContainer" class="chart-section">
-                <canvas id="sleepChart" width="400" height="200"></canvas>
+                <canvas id="sleepChart" width="600" height="400"></canvas>
             </div>
         </div>
     </div>
@@ -53,5 +56,49 @@
     <script type="module" src="../js/logout.js"></script>
     <script type="module" src="../js/navbar.js"></script>
     <script type="module" src="../js/auth.js"></script>  
+
+
+
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2>MindAid</h2>
+                <p>Your partner in mental well-being, offering tools and support when you need it most.</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../html/index.html">Home</a></li>
+                    <li><a href="../html/journal.html">Journal</a></li>
+                    <li><a href="../html/resources.html">Resources</a></li>
+                    <li><a href="../html/badges.html">Badges</a></li>
+                    <li><a href="../html/water-sleep.html">Water & Sleep</a></li>
+                </ul>
+            </div>
+            <div class="footer-section social">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com" class="social-icon"><img src="facebook.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com" class="social-icon"><img src="social.png" alt="Instagram"></a>
+                    <a href="https://www.twitter.com" class="social-icon"><img src="twitter.png" alt="Twitter"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 MindAid | All Rights Reserved</p>
+            <button id="backToTop" onclick="scrollToTop()">Back to Top ↑</button>
+        </div>
+    </footer>
+    
+    <script>
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+
+
+<script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
+<script src="https://files.bpcontent.cloud/2024/11/09/12/20241109123230-3K93O8XN.js"></script>
 </body>
 </html>

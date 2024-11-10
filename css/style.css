@@ -32,6 +32,7 @@ nav ul li {
 
 nav button{
     margin-left: 20px;
+    cursor: pointer;
 }
 
 #authContainer, #chatContainer, #badgeContainer {
@@ -70,20 +71,6 @@ button{
     border: none;
 }
 
-
-
-
-/* button {
-    padding: 10px;
-    background: #6200ea;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-button:hover {
-    background: #5e00d1;
-} */
 
 #chatOutput {
     border: 1px solid #ccc;
@@ -156,7 +143,7 @@ button:hover {
 
 .chart-section canvas {
     width: 100%;
-    height: 400px;
+    height: 600px;
 }
 
 /* canvas#waterChart{
@@ -271,3 +258,93 @@ button{
     padding: 10px;
     font-size: 0.9rem;
   }
+
+
+
+
+  .footer {
+    background: #325b6b;
+    color: #f1f1f1;
+    padding: 40px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 20px;
+    max-width: 300px;
+}
+
+.footer-section h2, .footer-section h3 {
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.footer-section p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 8px 0;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social-icon img {
+    width: 35px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+    color: #cccccc;
+    margin-top: 40px;
+    border-top: 1px solid #444;
+    padding-top: 20px;
+}
+
+#backToTop {
+    background: #4D869C;
+    border: none;
+    color: #fff;
+    padding: 8px 12px;
+    font-size: 0.85rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+#backToTop:hover {
+    background: #6693a5;
+    transform: translateY(-2px);
+}  

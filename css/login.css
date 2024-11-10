@@ -24,13 +24,14 @@ body{
 h2, h3{
     text-align:center;
     color:#333;
+    padding-bottom: 1em;
 }
 input[type="email"],
 input[type="password"],
 input[type="text"]{
     width:100%;
     padding:10px;
-    margin:10px 0;
+    margin:13px 0;
     border:1px solid #ccc;
     border-radius: 4px;
     box-sizing:border-box;
@@ -44,15 +45,65 @@ button[type="button"]{
     color: white;
     cursor:pointer;
     font-size:14px;
-    padding:0.5em;
-    margin-left: 0.5em;
+    /* padding:0.4em; */
+    /* margin-left: 0.5em; */
 }
-p{text-align:center;
+p{
+    text-align:center;
 margin:10px 0 0;
-color:#666;}
+color:#666;
+margin-bottom: 1.2em;
+}
+
 #registrationForm{
     display:none;
 }
 #loginForm{
     display:block;
+}
+
+
+
+
+
+
+/* Media Query for tablets and larger phones */
+@media (max-width: 768px) {
+    .auth-container {
+        padding: 2rem;
+    }
+    h2, h3 {
+        font-size: 1.5em;
+    }
+    button[type="submit"],
+    button[type="button"] {
+        font-size: 1em;
+    }
+}
+
+/* Media Query for small phones */
+@media (max-width: 500px) {
+    body {
+        padding: 30px;
+    }
+    .auth-container {
+        padding: 1.5rem;
+        width: 100%;
+        max-width: 100%;
+        box-shadow: none;
+    }
+    h2, h3 {
+        font-size: 1.2em;
+        padding-bottom: 0.8em;
+    }
+    input[type="email"],
+    input[type="password"],
+    input[type="text"] {
+        padding: 8px;
+        font-size: 0.9em;
+    }
+    button[type="submit"],
+    button[type="button"] {
+        font-size: 0.9em;
+    }
 }

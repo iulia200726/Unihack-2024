@@ -233,7 +233,7 @@
     font-style: italic;
 }
 
-/* Media Queries */
+/* Media Queries
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
@@ -242,4 +242,18 @@
         margin-top: 20px;
     }
 }
-  
+   */
+
+
+   @media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: start;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-content {
+        flex-direction: column;
+    }
+}

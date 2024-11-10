@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unihack- Journal</title>
+    <title>MindAid-Journal</title>
     <link rel="stylesheet" href="../css/style.css">
     <script type="module" src="../js/firebaseInit.js"></script>
     <script type="module" src="../js/journal.js"></script>
@@ -12,20 +12,19 @@
 <body>
     <header class="banner">
         <p>Suicide Hotline Telephone: 0800 801 200</p>
-      </header>
+    </header>
     <nav>
         <h1 class="h">MindAid</h1>
-        <ul>
-            <li><a href="../html/index.html">Homepage</a></li>
+        <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+        <ul class="menu">
+            <li><a href="../html/index.html">Home</a></li>
             <li><a href="../html/journal.html">Journal</a></li>
             <li><a href="../html/resources.html">Resources</a></li>
             <li><a href="../html/badges.html">Badges</a></li>
             <li><a href="../html/water-sleep.html">Water and Sleep</a></li>
             <li id="usernameDisplay" style="cursor:pointer; display:none;"></li>
-            <div class="dropdown-content" id="dropdownContent"></div>
             <button id="logoutButton" class="element1">Logout</button>
             <button id="deleteAccountButton" class="element1">Delete Account</button>
-            </li>
         </ul>
     </nav>
     <main>
@@ -39,21 +38,43 @@
     <script type="module" src="../js/logout.js"></script>
     <script type="module" src="../js/auth.js"></script>
     <script type="module" src="../js/navbar.js"></script>
-        <footer>
-            <div class="footer-section social">
-                <a href="https://www.facebook.com"
-                ><img src="facebook.png" alt="Facebook" width="25"
-                /></a>
-                <a href="ttps://www.instagram.com"
-                ><img src="social.png" alt="Instagram" width="25"
-                /></a>
-                <a href="https://www.twitter.com"
-                ><img src="twitter.png" alt="Twitter" width="25"
-                /></a>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2>MindAid</h2>
+                <p>Your partner in mental well-being, offering tools and support when you need it most.</p>
             </div>
-        </footer>
-    
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../html/index.html">Home</a></li>
+                    <li><a href="../html/journal.html">Journal</a></li>
+                    <li><a href="../html/resources.html">Resources</a></li>
+                    <li><a href="../html/badges.html">Badges</a></li>
+                    <li><a href="../html/water-sleep.html">Water & Sleep</a></li>
+                </ul>
+            </div>
+            <div class="footer-section social">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com" class="social-icon"><img src="facebook.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com" class="social-icon"><img src="social.png" alt="Instagram"></a>
+                    <a href="https://www.twitter.com" class="social-icon"><img src="twitter.png" alt="Twitter"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 MindAid | All Rights Reserved</p>
+            <button id="backToTop" onclick="scrollToTop()">Back to Top ↑</button>
+        </div>
+    </footer>
+    <script>
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
     <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
-<script src="https://files.bpcontent.cloud/2024/11/09/12/20241109123230-3K93O8XN.js"></script>
+    <script src="https://files.bpcontent.cloud/2024/11/09/12/20241109123230-3K93O8XN.js"></script>
 </body>
 </html>

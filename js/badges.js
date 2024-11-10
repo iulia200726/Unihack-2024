@@ -26,25 +26,34 @@ async function displayBadges(userId) {
     const userRef = doc(db, "users", userId);
     const docSnapshot = await getDoc(userRef);
 
+    badgeList.innerHTML = ""; // Clear existing badges in case of re-render
+
     if (docSnapshot.exists()) {
         const badges = docSnapshot.data().badges || [];
-        badgeList.innerHTML = ""; // Clear existing badges in case of re-render
-        badges.forEach(badge => {
-            const badgeCard = document.createElement("li");
-            badgeCard.classList.add("badge-card");
+        
+        if (badges.length === 0) {
+            // If no badges, display a message
+            const noBadgeMessage = document.createElement("p");
+            noBadgeMessage.textContent = "No badges earned today.";
+            noBadgeMessage.classList.add("no-badge-message");
+            badgeList.appendChild(noBadgeMessage);
+        } else {
+            badges.forEach(badge => {
+                const badgeCard = document.createElement("li");
+                badgeCard.classList.add("badge-card");
 
-            // Check if the badge has a specific image and use it
-            const badgeImage = badgeImages[badge] || "path/to/default-badge.jpg";
+                // Check if the badge has a specific image and use it
+                const badgeImage = badgeImages[badge] || "path/to/default-badge.jpg";
 
-            // Structură de card pentru fiecare badge
-            badgeCard.innerHTML = `
-                <img src="${badgeImage}" alt="${badge}" class="badge-image">
-                <h4>${badge}</h4>
-                <p>Description of ${badge}</p>
-            `;
+                // Card structure for each badge
+                badgeCard.innerHTML = `
+                    <img src="${badgeImage}" alt="${badge}" class="badge-image">
+                    <h4>${badge}</h4>
+                `;
 
-            badgeList.appendChild(badgeCard);
-        });
+                badgeList.appendChild(badgeCard);
+            });
+        }
         console.log("Displayed badges:", badges);
     } else {
         console.log("No badges found for the user.");

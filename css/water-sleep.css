@@ -27,6 +27,7 @@ body {
     gap: 20px; /* Distanță între secțiuni */
     margin-top: 20px;
    margin: auto;
+   margin-top: 2em;
 }
 
 /* Fiecare secțiune (Water Intake și Sleep Hours) va ocupa jumătate din lățimea containerului */
@@ -62,6 +63,7 @@ form input[type="number"] {
     width: 250px;
     margin-right: 10px;
     font-size: 1em;
+    margin-bottom: 1em;
 }
 
 form button {
@@ -89,9 +91,11 @@ form button:hover {
     max-width: 500px;
     text-align: center;
     margin-top: 20px;
+    height: 300px;
 }
 
 .chart {
     margin-top: 10px;
+
 }
 

@@ -1,6 +1,6 @@
 
 /* Main Content */
-div {
+.div1 {
     padding: 20px;
     margin: 20px;
     background-color: white;
@@ -25,8 +25,8 @@ h2 {
 
 .category h3 {
     font-size: 1.5rem;
-    color: #2980b9;
-    border-bottom: 2px solid #2980b9;
+    color: #264653;
+    border-bottom: 2px solid #264653;
     padding-bottom: 5px;
     margin-bottom: 15px;
 }
@@ -46,37 +46,37 @@ h2 {
 
 /* Specific Categories Styles */
 .category-mental-health {
-    background-color: #ecf0f1;
+    background-color: #0000001a;
     padding: 20px;
     border-radius: 8px;
 }
 
 .category-stress-management {
-    background-color: #ecf0f1;
+    background-color: #0000001a;
     padding: 20px;
     border-radius: 8px;
 }
 
 .category-productivity {
-    background-color: #ecf0f1;
+    background-color: #0000001a;
     padding: 20px;
     border-radius: 8px;
 }
 
 .category-wellness {
-    background-color: #ecf0f1;
+    background-color: #0000001a;
     padding: 20px;
     border-radius: 8px;
 }
 
 .category-education {
-    background-color: #ecf0f1;
+    background-color: #0000001a;
     padding: 20px;
     border-radius: 8px;
 }
 
 .category-leadership {
-    background-color: #ecf0f1;
+    background-color: #0000001a;
     padding: 20px;
     border-radius: 8px;
 }
@@ -89,7 +89,7 @@ h2 {
 
 /* Button in Category */
 button.category-btn {
-    background-color: #ecf0f1;
+    background-color: #0000001a;
     color: white;
     padding: 10px 15px;
     font-size: 1rem;
@@ -163,7 +163,7 @@ body {
 
 #searchBar:focus {
     outline: none;
-    border-color: #3498db;
+    border-color: #264653;
     box-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
 }
 
